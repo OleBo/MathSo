@@ -1,0 +1,2 @@
+# MathSo
+Lecture on numeric

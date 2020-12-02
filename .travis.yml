@@ -1,0 +1,25 @@
+os:
+- linux
+language: python
+python:
+  - "3.8"
+
+branches:
+  only: 
+    - master
+
+install:
+  - pip install poetry
+  - poetry install 
+  - poetry install -E tests
+ 
+jobs:
+  include:
+    - stage: tests
+      script:
+      - pytest --cov=scripts tests/
+      name: pytest
+    - script: autopep8 --in-place --aggressive --recursive .
+      name: pep8 format
+    - script: flake8 
+      name: flake8  

@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/OleBo/MathSo.svg?branch=main)](https://travis-ci.com/OleBo/MathSo)
 # MathSo
 Lecture on numeric
 

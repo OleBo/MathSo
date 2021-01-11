@@ -12,4 +12,3 @@
 # now, instead of import
 # python_ml_template.utils.hello_world.say_hello_world, you can import
 # python_ml_template.utils.say_hello_world
-

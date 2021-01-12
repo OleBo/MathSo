@@ -76,7 +76,8 @@ def main(alpha=0.4, beta=0.04, gamma=0.02, delta=2, y0_0=105, y0_1=8,
     ax1.set_ylabel('population')
 
     ax2.plot(lvm.y[0, :], lvm.y[1, :], label='predator vs prey')
-    ax2.legend()
+    ax2.plot(delta/gamma, alpha/beta, 'o', label='fix point')
+    ax2.legend(loc='lower right')
     ax2.set_title('phase space')
     ax2.set_xlabel('prey')
     ax2.set_ylabel('predator')
@@ -89,23 +90,23 @@ def interactive():
     """ interactive call of `main`
     """
     interact(main,
-             alpha=FloatSlider(min=0, max=24, step=0.01, value=0.4,
-                               description='Birth Rate of Rabbits',
+             alpha=FloatSlider(min=0.01, max=24, step=0.01, value=0.4,
+                               description='Birth Rate of Prey',
                                style=style, layout=slider_layout),
-             beta=FloatSlider(min=0, max=24, step=0.01, value=0.04,
-                              description='Death Rate of Rabbits',
+             beta=FloatSlider(min=0.01, max=24, step=0.01, value=0.04,
+                              description='Death Rate of Prey',
                               style=style, layout=slider_layout),
-             gamma=FloatSlider(min=0, max=24, step=0.01, value=0.02,
-                               description='Birth Rate of Foxes',
+             gamma=FloatSlider(min=0.01, max=24, step=0.01, value=0.02,
+                               description='Birth Rate of Predator',
                                style=style, layout=slider_layout),
-             delta=FloatSlider(min=0, max=24, step=0.01, value=2.,
-                               description='Death Rate of Foxes',
+             delta=FloatSlider(min=0.01, max=24, step=0.01, value=2.,
+                               description='Death Rate of Predator',
                                style=style, layout=slider_layout),
-             y0_0=FloatSlider(min=1, max=200, step=1, value=105.,
-                              description='Initial population Rabbits',
+             y0_0=FloatSlider(min=0.01, max=200, step=0.01, value=105.,
+                              description='Initial population Prey',
                               style=style, layout=slider_layout),
-             y0_1=FloatSlider(min=1, max=100, step=1, value=8.,
-                              description='Initial population Foxes',
+             y0_1=FloatSlider(min=0.01, max=100, step=0.01, value=8.,
+                              description='Initial population Predator',
                               style=style, layout=slider_layout),
              my_range=IntRangeSlider(min=0, max=50, step=1, value=[0, 15],
                                      description='time interval',

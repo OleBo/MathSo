@@ -14,14 +14,14 @@ ipython = "^7.19.0"
 sympy = "^1.7.1"
 matplotlib = "^3.3.3"
 statsmodels = "^0.12.1"
-
-[tool.poetry.dev-dependencies]
-jupyter = "^1.0.0"
-pylint = "^2.6.0"
 pytest = {version = "^5.4.3", optional = true}
 pytest-cov = {version = "^2.10.1", optional = true}
 autopep8 = {version = "^1.5.4", optional = true}
 flake8 = {version = "^3.8.4", optional = true}
+
+[tool.poetry.dev-dependencies]
+jupyter = "^1.0.0"
+pylint = "^2.6.0"
 
 [tool.poetry.extras]
 tests = ["pytest", "pytest-cov","flake8", "autopep8"]

@@ -5,3 +5,10 @@
 /coverage.data
 /coverage/
 .coverage
+
+.hypothesis/**
+
+# Ignore Numerik folder
+Numerik
+/Numerik/
+Numerik/**

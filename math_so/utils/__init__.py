@@ -14,5 +14,8 @@
 # python_ml_template.utils.say_hello_world
 
 from .hello_world import say_hello_world
+from .approx_error import absolute_error, relative_error, signif
+from .floating_point import positional2decimal
 
-__all__ = ['say_hello_world', ]
+__all__ = ['say_hello_world', 'absolute_error', 'relative_error',
+           'signif', 'positional2decimal', ]

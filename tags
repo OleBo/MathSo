@@ -1,0 +1,66 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Bisektionsverfahren	Numerik/Slides/chapter4.tex	/^\\subsection{Bisektionsverfahren}$/;"	b
+Computerarithmetik und Fehlerrechnung	Numerik/Slides/chapter2.tex	/^\\section{Computerarithmetik und Fehlerrechnung}$/;"	s
+Der Gau Algorithmus	Numerik/Slides/chapter3.tex	/^\\subsection{Der Gauß-Algorithmus}$/;"	b
+Einleitung	Numerik/Slides/chapter1.tex	/^\\section{Einleitung}$/;"	s
+FIGS	Numerik/Pruefung/Makefile	/^FIGS=img$/;"	m
+FIGS	Numerik/Slides/Makefile	/^FIGS=img$/;"	m
+Fehlerfortpflanzung	Numerik/Slides/chapter2.tex	/^\\subsection{Fehlerfortpflanzung}$/;"	b
+FloatSlider	math_so/model/lotka_volterra.py	/^from ipywidgets.widgets import interact, IntRangeSlider, FloatSlider, Layout$/;"	i
+IntRangeSlider	math_so/model/lotka_volterra.py	/^from ipywidgets.widgets import interact, IntRangeSlider, FloatSlider, Layout$/;"	i
+Interpolation	Numerik/Slides/chapter5.tex	/^\\section{Interpolation}$/;"	s
+Konvergenzbetrachtungen	Numerik/Slides/chapter8.tex	/^\\subsection{Konvergenzbetrachtungen}$/;"	b
+Layout	math_so/model/lotka_volterra.py	/^from ipywidgets.widgets import interact, IntRangeSlider, FloatSlider, Layout$/;"	i
+Lineare Gleichungssysteme Direkte Methoden	Numerik/Slides/chapter3.tex	/^\\section{Lineare Gleichungssysteme: Direkte Methoden}$/;"	s
+Lineare Gleichungssysteme Iterative Verfahren	Numerik/Slides/chapter8.tex	/^\\section{Lineare Gleichungssysteme: Iterative Verfahren}$/;"	s
+Newton Cotes Formeln	Numerik/Slides/chapter7.tex	/^\\subsection{Newton-Cotes-Formeln}$/;"	b
+Newton Verfahren	Numerik/Slides/chapter4.tex	/^\\subsection{Newton-Verfahren}$/;"	b
+Nichtlineare Gleichungen	Numerik/Slides/chapter4.tex	/^\\section{Nichtlineare Gleichungen}$/;"	s
+Numerische Differentiation	Numerik/Slides/chapter6.tex	/^\\section{Numerische Differentiation}$/;"	s
+Numerische Integration	Numerik/Slides/chapter7.tex	/^\\section{Numerische Integration}$/;"	s
+PDF_MAKE	Numerik/Python/Makefile	/^PDF_MAKE=..\/Makefile.include$/;"	m
+Polynominterpolation	Numerik/Slides/chapter5.tex	/^\\subsection{Polynominterpolation}$/;"	b
+Relaxationsverfahren	Numerik/Slides/chapter8.tex	/^\\subsection{Relaxationsverfahren}$/;"	b
+Sekantenverfahren Regula falsi	Numerik/Slides/chapter4.tex	/^\\subsection{Sekantenverfahren, Regula falsi}$/;"	b
+Spline Interpolation	Numerik/Slides/chapter5.tex	/^\\subsection{Spline-Interpolation}$/;"	b
+TARGET	Numerik/Pruefung/Makefile	/^TARGET=klausur1$/;"	m
+TARGET	Numerik/Python/Makefile	/^TARGET=chapter1$/;"	m
+TARGET	Numerik/Slides/Makefile	/^TARGET=intro slides$/;"	m
+TestUtils	tests/test_utils.py	/^class TestUtils(unittest.TestCase):$/;"	c
+Zahldarstellung	Numerik/Slides/chapter2.tex	/^\\subsection{Zahldarstellung}$/;"	b
+__all__	math_so/utils/__init__.py	/^__all__ = ['say_hello_world', 'absolute_error', 'relative_error',$/;"	v
+__version__	math_so/__init__.py	/^__version__ = '0.1.0'$/;"	v
+__version__	tests/test_math_so.py	/^from math_so import __version__$/;"	i
+absolute_error	math_so/utils/__init__.py	/^from .approx_error import absolute_error, relative_error, signif$/;"	i
+absolute_error	math_so/utils/approx_error.py	/^def absolute_error(value, approx):$/;"	f
+absolute_error	tests/test_utils.py	/^from math_so.utils import say_hello_world, absolute_error, relative_error, signif, positional2decimal$/;"	i
+interact	math_so/model/lotka_volterra.py	/^from ipywidgets.widgets import interact, IntRangeSlider, FloatSlider, Layout$/;"	i
+interactive	math_so/model/lotka_volterra.py	/^def interactive():$/;"	f
+main	math_so/model/lotka_volterra.py	/^def main(alpha=0.4, beta=0.04, gamma=0.02, delta=2, y0_0=105, y0_1=8,$/;"	f
+math	math_so/utils/approx_error.py	/^import math$/;"	i
+np	math_so/model/lotka_volterra.py	/^import numpy as np$/;"	i
+plt	math_so/model/lotka_volterra.py	/^from matplotlib import pyplot as plt$/;"	i
+positional2decimal	math_so/utils/__init__.py	/^from .floating_point import positional2decimal$/;"	i
+positional2decimal	math_so/utils/floating_point.py	/^def positional2decimal(number, base):$/;"	f
+positional2decimal	tests/test_utils.py	/^from math_so.utils import say_hello_world, absolute_error, relative_error, signif, positional2decimal$/;"	i
+relative_error	math_so/utils/__init__.py	/^from .approx_error import absolute_error, relative_error, signif$/;"	i
+relative_error	math_so/utils/approx_error.py	/^def relative_error(value, approx):$/;"	f
+relative_error	tests/test_utils.py	/^from math_so.utils import say_hello_world, absolute_error, relative_error, signif, positional2decimal$/;"	i
+say_hello_world	math_so/utils/__init__.py	/^from .hello_world import say_hello_world$/;"	i
+say_hello_world	math_so/utils/hello_world.py	/^def say_hello_world():$/;"	f
+say_hello_world	scripts/say-hello-world.py	/^from math_so.utils import say_hello_world$/;"	i
+say_hello_world	tests/test_utils.py	/^from math_so.utils import say_hello_world, absolute_error, relative_error, signif, positional2decimal$/;"	i
+signif	math_so/utils/__init__.py	/^from .approx_error import absolute_error, relative_error, signif$/;"	i
+signif	math_so/utils/approx_error.py	/^def signif(number, significant_digits):$/;"	f
+signif	tests/test_utils.py	/^from math_so.utils import say_hello_world, absolute_error, relative_error, signif, positional2decimal$/;"	i
+slider_layout	math_so/model/lotka_volterra.py	/^slider_layout = Layout(width='99%')$/;"	v
+solve_ivp	math_so/model/lotka_volterra.py	/^from scipy.integrate import solve_ivp$/;"	i
+style	math_so/model/lotka_volterra.py	/^style = {'description_width': '150px'}$/;"	v
+test_main	tests/test_utils.py	/^    def test_main(self):$/;"	m	class:TestUtils
+test_version	tests/test_math_so.py	/^def test_version():$/;"	f
+unittest	tests/test_utils.py	/^import unittest$/;"	i

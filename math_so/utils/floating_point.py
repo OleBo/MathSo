@@ -8,7 +8,8 @@ def positional2decimal(number, base):
     r"""convert a number from a certain positional notation to decimal.
 
     .. math::
-       x = \sum_{k=-\infty}^n a_k b^k =: (a_n a_{n-1} \ldots a_1 a_0 \, . \, a_{-1} a_{-2} \ldots)_b
+       x = \sum_{k=-\infty}^n a_k b^k =: (a_n a_{n-1} \ldots a_1 a_0 \, . \,
+       a_{-1} a_{-2} \ldots)_b
 
     for :math:`n\in\mathbb{Z}`, :math:`0\le a_k < b` are the numeral digits,
     for :math:`0\le k` before and :math:`k<0` after the decimal point in the

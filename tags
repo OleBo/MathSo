@@ -38,7 +38,7 @@ __version__	math_so/__init__.py	/^__version__ = '0.1.0'$/;"	v
 __version__	tests/test_math_so.py	/^from math_so import __version__$/;"	i
 absolute_error	math_so/utils/__init__.py	/^from .approx_error import absolute_error, relative_error, signif$/;"	i
 absolute_error	math_so/utils/approx_error.py	/^def absolute_error(value, approx):$/;"	f
-absolute_error	tests/test_utils.py	/^from math_so.utils import say_hello_world, absolute_error, relative_error, signif, positional2decimal$/;"	i
+absolute_error	tests/test_utils.py	/^from math_so.utils import (say_hello_world, absolute_error, relative_error,$/;"	i
 interact	math_so/model/lotka_volterra.py	/^from ipywidgets.widgets import interact, IntRangeSlider, FloatSlider, Layout$/;"	i
 interactive	math_so/model/lotka_volterra.py	/^def interactive():$/;"	f
 main	math_so/model/lotka_volterra.py	/^def main(alpha=0.4, beta=0.04, gamma=0.02, delta=2, y0_0=105, y0_1=8,$/;"	f
@@ -47,17 +47,15 @@ np	math_so/model/lotka_volterra.py	/^import numpy as np$/;"	i
 plt	math_so/model/lotka_volterra.py	/^from matplotlib import pyplot as plt$/;"	i
 positional2decimal	math_so/utils/__init__.py	/^from .floating_point import positional2decimal$/;"	i
 positional2decimal	math_so/utils/floating_point.py	/^def positional2decimal(number, base):$/;"	f
-positional2decimal	tests/test_utils.py	/^from math_so.utils import say_hello_world, absolute_error, relative_error, signif, positional2decimal$/;"	i
 relative_error	math_so/utils/__init__.py	/^from .approx_error import absolute_error, relative_error, signif$/;"	i
 relative_error	math_so/utils/approx_error.py	/^def relative_error(value, approx):$/;"	f
-relative_error	tests/test_utils.py	/^from math_so.utils import say_hello_world, absolute_error, relative_error, signif, positional2decimal$/;"	i
+relative_error	tests/test_utils.py	/^from math_so.utils import (say_hello_world, absolute_error, relative_error,$/;"	i
 say_hello_world	math_so/utils/__init__.py	/^from .hello_world import say_hello_world$/;"	i
 say_hello_world	math_so/utils/hello_world.py	/^def say_hello_world():$/;"	f
 say_hello_world	scripts/say-hello-world.py	/^from math_so.utils import say_hello_world$/;"	i
-say_hello_world	tests/test_utils.py	/^from math_so.utils import say_hello_world, absolute_error, relative_error, signif, positional2decimal$/;"	i
+say_hello_world	tests/test_utils.py	/^from math_so.utils import (say_hello_world, absolute_error, relative_error,$/;"	i
 signif	math_so/utils/__init__.py	/^from .approx_error import absolute_error, relative_error, signif$/;"	i
 signif	math_so/utils/approx_error.py	/^def signif(number, significant_digits):$/;"	f
-signif	tests/test_utils.py	/^from math_so.utils import say_hello_world, absolute_error, relative_error, signif, positional2decimal$/;"	i
 slider_layout	math_so/model/lotka_volterra.py	/^slider_layout = Layout(width='99%')$/;"	v
 solve_ivp	math_so/model/lotka_volterra.py	/^from scipy.integrate import solve_ivp$/;"	i
 style	math_so/model/lotka_volterra.py	/^style = {'description_width': '150px'}$/;"	v

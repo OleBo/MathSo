@@ -29,18 +29,19 @@ class TestUtils(unittest.TestCase):
     def test_nonlinear(self):
         """ Test Utility Function Nonlinear Systems """
 
-        self.assertEqual(bisection(lambda x: np.exp(-x) - np.sin(x), 0,
-                                   .5*math.pi, 1e-6), 0.5885329263701276)
-        self.assertEqual(newton(lambda x: np.exp(-x) - np.sin(x),
-                                lambda x: -np.exp(-x) - np.cos(x), 1., 1e-6),
-                         0.5885327439818611)
-        self.assertEqual(heron(4, 1e-6), 2.000000000000002)
-        self.assertEqual(secant_method(lambda x: np.exp(-x) - np.sin(x),
-                                       .7, 1., 1e-6), 0.5885327496049312)
-        self.assertEqual(regula_falsi(lambda x: np.exp(-x) - np.sin(x),
-                                      0, .5*math.pi, 1e-6), 0.5885328238248644)
-        self.assertEqual(fpiterate(lambda x: np.arcsin(np.exp(-x)), 1., 1e-6),
-                         0.588533120227473)
+        self.assertAlmostEqual(bisection(lambda x: np.exp(-x) - np.sin(x), 0,
+                                         .5*math.pi, 1e-6), 0.5885329263701276)
+        self.assertAlmostEqual(newton(lambda x: np.exp(-x) - np.sin(x),
+                                      lambda x: -np.exp(-x) - np.cos(x), 1.,
+                                      1e-6), 0.5885327439818611)
+        self.assertAlmostEqual(heron(4, 1e-6), 2.000000000000002)
+        self.assertAlmostEqual(secant_method(lambda x: np.exp(-x) - np.sin(x),
+                                             .7, 1., 1e-6), 0.5885327496049312)
+        self.assertAlmostEqual(regula_falsi(lambda x: np.exp(-x) - np.sin(x),
+                                            0, .5*math.pi, 1e-6),
+                               0.5885328238248644)
+        self.assertAlmostEqual(fpiterate(lambda x: np.arcsin(np.exp(-x)), 1.,
+                                         1e-6), 0.588533120227473)
 
 
 if __name__ == '__main__':

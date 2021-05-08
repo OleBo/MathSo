@@ -2,7 +2,7 @@
 The approximation error in some data is the discrepancy between an exact
 value and some approximation to it.
 """
-import math
+import numpy as np
 
 
 def absolute_error(value, approx):
@@ -51,8 +51,8 @@ def signif(number, significant_digits):
     and `ndigits` as the number of significant digits minus
     `(int(math.floor(math.log10(abs(number)))) - 1)`.
     """
-    if number is not None and (number == 0):
-        return 0.0
-    # is None or not zero
-    return round(number, significant_digits
-                 - int(math.floor(math.log10(abs(number)))) - 1)
+    number = np.asarray(number)
+    number_positive = np.where(np.isfinite(number) & (number != 0),
+                               np.abs(number), 10**(significant_digits-1))
+    mags = 10 ** (significant_digits - 1 - np.floor(np.log10(number_positive)))
+    return np.round(number * mags) / mags

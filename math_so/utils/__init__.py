@@ -16,6 +16,10 @@
 from .hello_world import say_hello_world
 from .approx_error import absolute_error, relative_error, signif
 from .floating_point import positional2decimal
+from .nonlinear_systems import (bisection, newton, heron, secant_method,
+                                regula_falsi, fpiterate)
+
 
 __all__ = ['say_hello_world', 'absolute_error', 'relative_error',
-           'signif', 'positional2decimal', ]
+           'signif', 'positional2decimal', 'bisection', 'newton', 'heron',
+           'secant_method', 'regula_falsi', 'fpiterate']

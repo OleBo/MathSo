@@ -4,35 +4,10 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-Bisektionsverfahren	Numerik/Slides/chapter4.tex	/^\\subsection{Bisektionsverfahren}$/;"	b
-Computerarithmetik und Fehlerrechnung	Numerik/Slides/chapter2.tex	/^\\section{Computerarithmetik und Fehlerrechnung}$/;"	s
-Der Gau Algorithmus	Numerik/Slides/chapter3.tex	/^\\subsection{Der Gauß-Algorithmus}$/;"	b
-Einleitung	Numerik/Slides/chapter1.tex	/^\\section{Einleitung}$/;"	s
-FIGS	Numerik/Pruefung/Makefile	/^FIGS=img$/;"	m
-FIGS	Numerik/Slides/Makefile	/^FIGS=img$/;"	m
-Fehlerfortpflanzung	Numerik/Slides/chapter2.tex	/^\\subsection{Fehlerfortpflanzung}$/;"	b
 FloatSlider	math_so/model/lotka_volterra.py	/^from ipywidgets.widgets import interact, IntRangeSlider, FloatSlider, Layout$/;"	i
 IntRangeSlider	math_so/model/lotka_volterra.py	/^from ipywidgets.widgets import interact, IntRangeSlider, FloatSlider, Layout$/;"	i
-Interpolation	Numerik/Slides/chapter5.tex	/^\\section{Interpolation}$/;"	s
-Konvergenzbetrachtungen	Numerik/Slides/chapter8.tex	/^\\subsection{Konvergenzbetrachtungen}$/;"	b
 Layout	math_so/model/lotka_volterra.py	/^from ipywidgets.widgets import interact, IntRangeSlider, FloatSlider, Layout$/;"	i
-Lineare Gleichungssysteme Direkte Methoden	Numerik/Slides/chapter3.tex	/^\\section{Lineare Gleichungssysteme: Direkte Methoden}$/;"	s
-Lineare Gleichungssysteme Iterative Verfahren	Numerik/Slides/chapter8.tex	/^\\section{Lineare Gleichungssysteme: Iterative Verfahren}$/;"	s
-Newton Cotes Formeln	Numerik/Slides/chapter7.tex	/^\\subsection{Newton-Cotes-Formeln}$/;"	b
-Newton Verfahren	Numerik/Slides/chapter4.tex	/^\\subsection{Newton-Verfahren}$/;"	b
-Nichtlineare Gleichungen	Numerik/Slides/chapter4.tex	/^\\section{Nichtlineare Gleichungen}$/;"	s
-Numerische Differentiation	Numerik/Slides/chapter6.tex	/^\\section{Numerische Differentiation}$/;"	s
-Numerische Integration	Numerik/Slides/chapter7.tex	/^\\section{Numerische Integration}$/;"	s
-PDF_MAKE	Numerik/Python/Makefile	/^PDF_MAKE=..\/Makefile.include$/;"	m
-Polynominterpolation	Numerik/Slides/chapter5.tex	/^\\subsection{Polynominterpolation}$/;"	b
-Relaxationsverfahren	Numerik/Slides/chapter8.tex	/^\\subsection{Relaxationsverfahren}$/;"	b
-Sekantenverfahren Regula falsi	Numerik/Slides/chapter4.tex	/^\\subsection{Sekantenverfahren, Regula falsi}$/;"	b
-Spline Interpolation	Numerik/Slides/chapter5.tex	/^\\subsection{Spline-Interpolation}$/;"	b
-TARGET	Numerik/Pruefung/Makefile	/^TARGET=klausur1$/;"	m
-TARGET	Numerik/Python/Makefile	/^TARGET=chapter1$/;"	m
-TARGET	Numerik/Slides/Makefile	/^TARGET=intro slides$/;"	m
 TestUtils	tests/test_utils.py	/^class TestUtils(unittest.TestCase):$/;"	c
-Zahldarstellung	Numerik/Slides/chapter2.tex	/^\\subsection{Zahldarstellung}$/;"	b
 __all__	math_so/__init__.py	/^__all__ = ['animate_bisection']$/;"	v
 __all__	math_so/utils/__init__.py	/^__all__ = ['say_hello_world', 'absolute_error', 'relative_error',$/;"	v
 __version__	math_so/__init__.py	/^__version__ = '0.1.0'$/;"	v
@@ -48,7 +23,6 @@ animate_bisection	scripts/animate_bisection.py	/^from math_so import animate_bis
 animation	math_so/animate_bisection.py	/^from matplotlib import animation$/;"	i
 argparse	math_so/animate_bisection.py	/^import argparse$/;"	i
 argv	math_so/animate_bisection.py	/^    argv = parser.parse_args()$/;"	v
-backsubst	math_so/utils/gauss_algorithm.py	/^def backsubst(utm, rhs, significant_digits):$/;"	f
 bisect	math_so/animate_bisection.py	/^def bisect(_f, _a, _b):$/;"	f
 bisection	math_so/utils/__init__.py	/^from .nonlinear_systems import (bisection, newton, heron, secant_method,$/;"	i
 bisection	math_so/utils/nonlinear_systems.py	/^def bisection(func, _a, _b, tol, termination_criterion='x'):$/;"	f
@@ -58,7 +32,6 @@ check_termination_criterion	math_so/utils/nonlinear_systems.py	/^    def check_t
 check_termination_criterion	math_so/utils/nonlinear_systems.py	/^    def check_termination_criterion(_x, _dx, tol):$/;"	f	function:newton
 check_termination_criterion	math_so/utils/nonlinear_systems.py	/^    def check_termination_criterion(_x, _dx, tol):$/;"	f	function:secant_method
 dfunc	math_so/utils/nonlinear_systems.py	/^    def dfunc(_x):$/;"	f	function:heron
-forwsubst	math_so/utils/gauss_algorithm.py	/^def forwsubst(ltm, rhs, significant_digits):$/;"	f
 fpiterate	math_so/utils/nonlinear_systems.py	/^def fpiterate(func, _x0, tol, maxits=100):$/;"	f
 func	math_so/utils/nonlinear_systems.py	/^    def func(_x):$/;"	f	function:heron
 heron	math_so/utils/__init__.py	/^from .nonlinear_systems import (bisection, newton, heron, secant_method,$/;"	i
@@ -78,7 +51,6 @@ newton	math_so/utils/nonlinear_systems.py	/^def newton(func, _df, _x0, tol, maxi
 np	math_so/animate_bisection.py	/^import numpy as np$/;"	i
 np	math_so/model/lotka_volterra.py	/^import numpy as np$/;"	i
 np	math_so/utils/approx_error.py	/^import numpy as np$/;"	i
-np	math_so/utils/gauss_algorithm.py	/^import numpy as np$/;"	i
 np	scripts/animate_bisection.py	/^import numpy as np$/;"	i
 np	tests/test_utils.py	/^import numpy as np$/;"	i
 parser	math_so/animate_bisection.py	/^    parser = argparse.ArgumentParser($/;"	v
@@ -99,7 +71,6 @@ secant_method	math_so/utils/nonlinear_systems.py	/^def secant_method(func, _x0, 
 sgn	math_so/animate_bisection.py	/^def sgn(_x):$/;"	f
 signif	math_so/utils/__init__.py	/^from .approx_error import absolute_error, relative_error, signif$/;"	i
 signif	math_so/utils/approx_error.py	/^def signif(number, significant_digits):$/;"	f
-signif	math_so/utils/gauss_algorithm.py	/^from math_so.utils import signif$/;"	i
 slider_layout	math_so/model/lotka_volterra.py	/^slider_layout = Layout(width='99%')$/;"	v
 solve_ivp	math_so/model/lotka_volterra.py	/^from scipy.integrate import solve_ivp$/;"	i
 style	math_so/model/lotka_volterra.py	/^style = {'description_width': '150px'}$/;"	v

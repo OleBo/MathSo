@@ -19,11 +19,10 @@ pytest-cov = {version = "^2.10.1", optional = true}
 autopep8 = {version = "^1.5.4", optional = true}
 flake8 = {version = "^3.8.4", optional = true}
 cellpylib = "^0.1.1"
-jupyter_nbextensions_configurator = "^0.4.1"
-jupyter-contrib-nbextensions = "^0.5.1"
+jupyter = "^1.0.0"
+ipykernel = "^6.4.1"
 
 [tool.poetry.dev-dependencies]
-jupyter = "^1.0.0"
 pylint = "^2.6.0"
 
 [tool.poetry.extras]

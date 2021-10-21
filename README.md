@@ -3,6 +3,58 @@
 # MathSo
 Lecture on numeric
 
+## Prerequisit
+
+[GitHub CLI](https://github.com/cli/cli) is required to clone repositories hosted on GitHub.com. [Poetry](https://python-poetry.org) is used for python packaging and dependency management. [Pyenv](https://github.com/pyenv/pyenv) lets you easily switch between multiple versions of Python.
+
+### macOS
+
+via [Homebrew](https://brew.sh/)
+
+```console
+brew install gh
+brew install poetry
+brew install pyenv
+```
+
+## Install
+
+Our project is using python 3.9.7, so let's install it:
+
+```console
+pyenv install 3.9.7
+```
+
+Go to your project folder and clone a GitHub repository locally.
+
+```console
+gh repo clone OleBo/MathSo & cd MathSo
+poetry install & poetry shell
+```
+
+The 'poetry install' reads the poetry.lock file from the current directory, processes it, and downloads and installs all the libraries and dependencies outlined in that file. If the file does not exist it will look for pyproject.toml and do the same.
+
+The 'shell' command spawns a shell, according to the $SHELL environment variable, within the virtual environment. If one doesn’t exist yet, it will be created.
+
+## Using Notebooks
+
+The notebook extensions can be installed. They need to be copied to the Jupyter data directory. Then, the installed notebook extensions can be enabled, either by using built-in Jupyter commands, or more conveniently by using the 'jupyter_nbextensions_configurator' server extension, which is installed as a dependency of this repo.
+
+```console
+jupyter contrib nbextension install --user
+jupyter nbextensions_configurator enable --user
+jupyter nbextension enable toc2/main
+jupyter nbextension enable collapsible_headings/main
+jupyter nbextension enable highlight_selected_word/main
+jupyter nbextension enable execute_time/ExecuteTime
+```
+
+Go to the notebooks folder and start Jupyter
+
+```console
+jupyter notebook
+```
+
 ## Template and CI
 
 The software development principles for this project are drawn from a [medium article by Trace Smith](https://medium.com/python-template-for-machine-learning-projects/integrating-software-development-principles-with-ml-projects-95c17794a561) and its [template repository](https://github.com/mleng-shared/python-ml-template).

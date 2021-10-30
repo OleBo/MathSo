@@ -1,43 +1,57 @@
+"""
+functions
+"""
+
 import math
 import numpy as np
-def interest1(b, p, n):
+
+
+def interest1(_b, _p, _n):
     """
-    INTEREST1(b, p, n) computes the new balance after n years for an initial
+    INTEREST1(_b, _p, _n) computes the new balance after n years for an initial
     balance b and an annual interest rate p in per cent
     """
-    return b*(1 + p/100)**n
+    return _b * (1 + _p / 100)**_n
 
-def gauss3(x, mu, sigma):
+
+def gauss3(_x, _mu, sigma):
     """
     GAUSS3 Evaluates Gaussian normal distribution with mean mu and standard
     deviation sigma at x
     """
-    return math.exp(-1/2*((x - mu)/sigma)**2)/(sigma*math.sqrt(2*math.pi))
+    return math.exp(-1 / 2 *
+                    ((_x - _mu) / sigma)**2) / (sigma * math.sqrt(2 * math.pi))
 
-def gauss4(x_arr, mu, sigma):
+
+def gauss4(x_arr, _mu, sigma):
     """
     GAUSS4 Evaluates Gaussian normal distribution with mean mu and standard
     deviation sigma at x, where x may be an array
     """
-    fd = []
-    for x in x_arr:
-            a=1/2*((x - mu)/sigma)**2
-            e=math.exp(-a)
-            fd.append((1/(sigma*math.sqrt(2*math.pi))) * e)
-    return np.array(fd)
-    
-def gauss5(x, mu, sigma):
+    _fd = []
+    for _x in x_arr:
+        _a = 1 / 2 * ((_x - _mu) / sigma)**2
+        _e = math.exp(-_a)
+        _fd.append((1 / (sigma * math.sqrt(2 * math.pi))) * _e)
+    return np.array(_fd)
+
+
+def gauss5(_x, _mu, sigma):
     """
     GAUSS5 Evaluates Gaussian normal distribution with mean mu and standard
     deviation sigma at x, where x may be an array
     """
-    return math.exp(-1/2*(np.linalg.matrix_power((x - mu)/sigma),2))/(sigma*math.sqrt(2*math.pi))
+    return math.exp(-1 / 2 * (np.linalg.matrix_power(
+        (_x - _mu) / sigma), 2)) / (sigma * math.sqrt(2 * math.pi))
 
-def angle(a, b):
+
+def angle(_a, _b):
     """
     ANGLE computes the angle between two vectors a and b in R^2
     """
-    adotb = np.sum(a*b)            # or np.dot(a,b)
-    norma = np.sqrt(np.sum(a*a));  # or np.linalg.norm(a)
-    normb = np.sqrt(np.sum(b*b));  # or np.linalg.norm(b)
-    return np.arccos(adotb/(norma*normb)); 
+    adotb = np.sum(_a * _b)  # or np.dot(a,b)
+    norma = np.sqrt(np.sum(_a * _a))
+    # or np.linalg.norm(a)
+    normb = np.sqrt(np.sum(_b * _b))
+    # or np.linalg.norm(b)
+    return np.arccos(adotb / (norma * normb))

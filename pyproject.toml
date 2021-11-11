@@ -21,6 +21,8 @@ flake8 = {version = "^3.8.4", optional = true}
 cellpylib = "^0.1.1"
 jupyter = "^1.0.0"
 ipykernel = "^6.4.1"
+qtconsole = "^5.1.1"
+PyQt5 = "^5.15.6"
 
 [tool.poetry.dev-dependencies]
 pylint = "^2.6.0"

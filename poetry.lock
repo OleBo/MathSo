@@ -215,6 +215,18 @@ unicode = ["unicodedata2 (>=13.0.0)"]
 woff = ["zopfli (>=0.1.4)", "brotlicffi (>=0.8.0)", "brotli (>=1.0.1)"]
 
 [[package]]
+name = "fplot"
+version = "0.2.3"
+description = "Plot functions with simple syntax"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+matplotlib = "*"
+numpy = "*"
+
+[[package]]
 name = "hypothesis"
 version = "5.49.0"
 description = "A library for property-based testing"
@@ -1271,7 +1283,7 @@ tests = ["pytest", "pytest-cov", "flake8", "autopep8"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8.3"
-content-hash = "395a6f962a079be20ca2bc960a7799935ac9f4a894fa34673f9fd4351b5937ea"
+content-hash = "6e3ef04791e5b6bc4996878082666a15310acebc9e9864db0ee57c84ff54c875"
 
 [metadata.files]
 appnope = [
@@ -1473,6 +1485,10 @@ flake8 = [
 fonttools = [
     {file = "fonttools-4.28.2-py3-none-any.whl", hash = "sha256:eff1da7ea274c54cb8842853005a139f711646cbf6f1bcfb6c9b86a627f35ff0"},
     {file = "fonttools-4.28.2.zip", hash = "sha256:dca694331af74c8ad47acc5171e57f6b78fac5692bf050f2ab572964577ac0dd"},
+]
+fplot = [
+    {file = "fplot-0.2.3-py3-none-any.whl", hash = "sha256:06628e9be7ccd5ccea4d09eab50883cba33368bc08a00cd20bb7c104dc136800"},
+    {file = "fplot-0.2.3.tar.gz", hash = "sha256:3d2c78c9882223a196e1210d1dd1be82398c72a087b37950acf77ead29cdb497"},
 ]
 hypothesis = [
     {file = "hypothesis-5.49.0-py3-none-any.whl", hash = "sha256:e91111f2f01abf2566041c4c86366aa7f08bfd5b3d858cc77a545fcf67df335e"},

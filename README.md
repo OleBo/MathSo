@@ -1,7 +1,17 @@
 [![Build Status](https://travis-ci.com/OleBo/MathSo.svg?branch=main)](https://travis-ci.com/OleBo/MathSo)
 [![Binder](http://mybinder.org/badge_logo.svg)](http://mybinder.org/v2/gh/OleBo/MathSo/main)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/OleBo/MathSo/)
 # MathSo
-Lecture on numeric
+Lecture on mathematical software:
+- [python basics](notebook/PythonBasics.ipynb) (Python as a pocket calculator, Operator precedence, Representation of numbers in Python, Functions, Vectors / arrays / Lists, Indexing, Array operators, Creating matrices)
+- [boolean arrays](notebook/Boolean Arrays.ipynb) (Functions of logical vectors, Elements of programming, Recursion)
+- [systems of linear equations](notebook/Systems of linear equations.ipynb) (Overdetermined systems, Underdetermined systems, Ill-conditioned systems, Logical operators, Logical vectors)
+- [data input visualization](notebook/DataInputVisualization.ipynb) (NumPy Array, Pandas data input, Visualization, Two-dimensional plots)
+- [loops / input output](notebook/LoopsInputOutput.ipynb) (for loops vs. array sums, while loops, Input and output, String formatting)
+- [visualization](notebook/Visualization.ipynb) (Multiple plots, figure, subplot, Combining two subplots, plotting functions using fplot, discrete data plots, scatter, stairs, stem, log plots, error bar plots, pie and bar plots, histograms, polar plots, editing plots, saving, printing and exporting)
+- [visualization 3d](notebook/Visualization3d.ipynb) (Line plots, Scatter plots, Mesh (wireframe), Surface plots)
+
+Lecture on numeric:
 
 ## Prerequisit
 

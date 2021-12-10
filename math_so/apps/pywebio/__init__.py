@@ -13,7 +13,6 @@
 # python_ml_template.utils.hello_world.say_hello_world, you can import
 # python_ml_template.utils.say_hello_world
 
-from .output_funcs import output_funcs
 from .bmi import main
 from .bokeh_app import bk_app
 

@@ -29,6 +29,7 @@ gleam = "^0.1.2"
 ggplot = "^0.11.5"
 pywebio = "^1.5.0"
 bokeh = "^2.4.2"
+qpsolvers = "^1.7.2"
 
 [tool.poetry.dev-dependencies]
 pylint = "^2.6.0"

@@ -1184,6 +1184,22 @@ cffi = {version = "*", markers = "implementation_name == \"pypy\""}
 py = {version = "*", markers = "implementation_name == \"pypy\""}
 
 [[package]]
+name = "qpsolvers"
+version = "1.7.2"
+description = "Quadratic programming solvers in Python with a unified API"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+quadprog = ">=0.1.8"
+scipy = ">=1.2.0"
+
+[package.extras]
+all_pypi_solvers = ["cvxopt (>=1.2.6)", "cvxpy (>=1.1.11)", "ecos (>=2.0.7.post1)", "osqp (>=0.6.2)", "scs (>=2.1.2,<3.0)"]
+doc = ["sphinx"]
+
+[[package]]
 name = "qtconsole"
 version = "5.2.2"
 description = "Jupyter Qt console"
@@ -1218,6 +1234,17 @@ packaging = "*"
 
 [package.extras]
 test = ["pytest (>=6.0.0,<7.0)", "pytest-cov (>=2.11.0)"]
+
+[[package]]
+name = "quadprog"
+version = "0.1.11"
+description = "Quadratic Programming Solver"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+numpy = "*"
 
 [[package]]
 name = "scipy"
@@ -1471,7 +1498,7 @@ tests = ["pytest", "pytest-cov", "flake8", "autopep8"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8.3"
-content-hash = "106ebf20574bd87702391088048855c7557ea66254b2f5d21d1d079155583810"
+content-hash = "4665361511e7720921a1b5e0d541c37fa83ab6550d82cdb9f4eb32f862ac7869"
 
 [metadata.files]
 appnope = [
@@ -2339,6 +2366,10 @@ pyzmq = [
     {file = "pyzmq-22.3.0-pp37-pypy37_pp73-win_amd64.whl", hash = "sha256:d6157793719de168b199194f6b6173f0ccd3bf3499e6870fac17086072e39115"},
     {file = "pyzmq-22.3.0.tar.gz", hash = "sha256:8eddc033e716f8c91c6a2112f0a8ebc5e00532b4a6ae1eb0ccc48e027f9c671c"},
 ]
+qpsolvers = [
+    {file = "qpsolvers-1.7.2-py3-none-any.whl", hash = "sha256:ff7194d38c6078b365023c2bd69813c3def8407a4a407fcb24a94bcbfd0432ff"},
+    {file = "qpsolvers-1.7.2.tar.gz", hash = "sha256:1be3bb41a866f3c516343facd73870ae6fe96da882d7b9b40fa0ad09b1f35261"},
+]
 qtconsole = [
     {file = "qtconsole-5.2.2-py3-none-any.whl", hash = "sha256:4aa6a3e600e0c8cf16853f2378311bc2371f57cb0f22ecfc28994f4cf409ee2e"},
     {file = "qtconsole-5.2.2.tar.gz", hash = "sha256:8f9db97b27782184efd0a0f2d57ea3bd852d053747a2e442a9011329c082976d"},
@@ -2346,6 +2377,9 @@ qtconsole = [
 qtpy = [
     {file = "QtPy-2.0.0-py3-none-any.whl", hash = "sha256:74bf26be3288aadc843cf3381d5ef0b82f11417ecdcbf26718a408f32590f1ac"},
     {file = "QtPy-2.0.0.tar.gz", hash = "sha256:777e333df4d711b2ec9743117ab319dadfbd743a5a0eee35923855ca3d35cd9d"},
+]
+quadprog = [
+    {file = "quadprog-0.1.11.tar.gz", hash = "sha256:8e320f9f7f1466141e317e61736e8108720e6adbae53f9d6960f726efef788d9"},
 ]
 scipy = [
     {file = "scipy-1.6.1-cp37-cp37m-macosx_10_9_x86_64.whl", hash = "sha256:a15a1f3fc0abff33e792d6049161b7795909b40b97c6cc2934ed54384017ab76"},
